@@ -49,7 +49,7 @@ public class TestPerubahanSuhu {
 	
 	double f = -5;
 	
-	double actual = perubahanSuhu.testperubahanSuhu(f, f);
+	double actual = perubahanSuhu.testperubahanSuhu(f);
 	
 	assertEquals(5, actual, 0.0);
 	
@@ -61,7 +61,10 @@ public class TestPerubahanSuhu {
 	double f = 0;
 	
 	Double fNull = null;
-		
+	
+	double actual = perubahanSuhu.testperubahanSuhu(f);
+	assertNull(fNull);
+	assertEquals(0, actual, 0.0);
 	
 	}
 }
